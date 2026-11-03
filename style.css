@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f5;
+    color: #26352d;
+    line-height: 1.6;
+}
+
+header {
+    background: #103d2b;
+    padding: 22px;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e7bd52;
+}
+
+.page {
+    display: none;
+    min-height: 75vh;
+    padding: 45px 18px;
+}
+
+.page.active {
+    display: block;
+}
+
+.hero {
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 65px 25px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #103d2b, #18734d);
+    border-radius: 16px;
+}
+
+.tag {
+    color: #e7bd52;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.container {
+    max-width: 620px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.container h1 {
+    color: #103d2b;
+    margin-bottom: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd8ce;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    background: #d6a936;
+    color: #103d2b;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+button:hover {
+    background: #e7bd52;
+}
+
+.summary {
+    background: #f1f7f2;
+    padding: 20px;
+    margin: 22px 0;
+    border-radius: 8px;
+}
+
+.summary p {
+    padding: 6px 0;
+}
+
+.notice {
+    background: #fff6df;
+    padding: 15px;
+    border-radius: 7px;
+    margin: 18px 0;
+    font-size: 14px;
+}
+
+.success {
+    text-align: center;
+}
+
+footer {
+    background: #103d2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+small {
+    display: block;
+    margin-top: 18px;
+}
+
+@media(max-width: 600px) {
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .container {
+        padding: 22px;
+    }
+}
