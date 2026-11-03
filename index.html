@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African CSO Awards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">AFRICAN <span>CSO AWARDS</span></div>
+</header>
+
+<main>
+
+<section id="welcome" class="page active">
+    <div class="hero">
+        <p class="tag">PROMOTION APPLICATION PLATFORM</p>
+        <h1>Welcome to African CSO Awards</h1>
+        <p>Explore our promotion packages and submit your application.</p>
+        <button onclick="showPage('application')">
+            Start Your Application →
+        </button>
+        <small>Official terms and eligibility should be reviewed before applying.</small>
+    </div>
+</section>
+
+<section id="application" class="page">
+    <div class="container">
+        <h1>Applicant Information</h1>
+        <p>Please provide your contact details.</p>
+
+        <form id="applicantForm">
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="+256..." required>
+
+            <label>Location</label>
+            <input type="text" id="location" required>
+
+            <button type="submit">Continue to Promotion Packages</button>
+        </form>
+    </div>
+</section>
+
+<section id="packages" class="page">
+    <div class="container">
+        <h1>Choose Your Promotion</h1>
+        <p>Select a package between UGX 1.6 million and UGX 24 million.</p>
+
+        <label>Promotion Amount</label>
+        <select id="packageAmount">
+            <option value="1600000">UGX 1,600,000</option>
+            <option value="24000000">UGX 24,000,000</option>
+        </select>
+
+        <div class="summary">
+            <p>Promotion amount: <strong id="total">UGX 1,600,000</strong></p>
+            <p>Activation fee: <strong id="activation">UGX 100,000</strong></p>
+            <p>Remaining balance: <strong id="remaining">UGX 1,500,000</strong></p>
+            <p>Number of slots: <strong>6</strong></p>
+            <p>Each slot: <strong id="slot">UGX 250,000</strong></p>
+        </div>
+
+        <p class="notice" id="packageNotice">
+            The displayed breakdown applies to the UGX 1,600,000 example.
+            Other package fees must be confirmed in published terms.
+        </p>
+
+        <button onclick="continuePayment()">
+            Continue to MTN MoMo
+        </button>
+    </div>
+</section>
+
+<section id="payment" class="page">
+    <div class="container">
+        <h1>MTN MoMo Payment</h1>
+        <p>Uganda 🇺🇬</p>
+
+        <p>Registered number: <strong id="displayPhone"></strong></p>
+
+        <div class="notice">
+            Continue through an authorized MTN MoMo payment
+            provider. Enter your MoMo PIN or approve payment
+            only in MTN's official secure payment interface.
+            Never share your OTP or PIN with this website.
+        </div>
+
+        <button onclick="showPage('congratulations')">
+            Return to demonstration
+        </button>
+        <small>This button does not confirm or process a payment.</small>
+    </div>
+</section>
+
+<section id="congratulations" class="page">
+    <div class="container success">
+        <h1>Thank You!</h1>
+        <p>Your website demonstration is complete.</p>
+        <p>No real payment has been made or verified.</p>
+        <button onclick="showPage('welcome')">Return Home</button>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 African CSO Awards. Demonstration platform.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
